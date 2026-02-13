@@ -1,3 +1,4 @@
+import { basicTsClass } from "./Classes/basicTsClass";
 import "./style.css";
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = /* html */ `
@@ -5,3 +6,5 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = /* html */ `
     <h1>TypeScript Classes</h1>
   </div>
 `;
+
+basicTsClass();
