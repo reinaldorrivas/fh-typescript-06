@@ -11,7 +11,7 @@ class FlyingAvenger extends Avenger {
 
   private isRich() {
     if (this.flying && !this.isNaturalFlying) {
-      this.rich = true;
+      this._rich = true;
     }
   }
 }
@@ -20,7 +20,7 @@ export const extendsTs = (): void => {
   const ironman = new FlyingAvenger("Ironman", 8000, "Tony Stark", false);
 
   console.log(ironman.avengerFullInfo());
-  console.log(`Is rich? ${ironman.name}:`, ironman.isRichOrNot);
+  console.log(`Is rich? ${ironman.name}:`, ironman.rich);
 
   Avenger.cantidadInstancias();
 

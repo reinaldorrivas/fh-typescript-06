@@ -4,7 +4,7 @@ export class Avenger {
     console.log("Cantidad instancias:", Avenger.instancias);
   }
 
-  protected rich: boolean = false;
+  protected _rich: boolean = false;
 
   constructor(
     public name: string,
@@ -14,12 +14,12 @@ export class Avenger {
     Avenger.instancias++;
   }
 
-  get isRichOrNot() {
-    return this.rich;
+  get rich() {
+    return this._rich;
   }
 
-  set isRichOrNot(rich) {
-    this.rich = rich;
+  set rich(value) {
+    this._rich = value;
   }
 
   public avengerFullInfo() {
@@ -31,7 +31,7 @@ export const shortenedConstructorClass = () => {
   const hulk = new Avenger("Hulk", 10000, "Bruce Banner");
 
   console.log(hulk.avengerFullInfo());
-  console.log(`Is rich? ${hulk.name}:`, hulk.isRichOrNot);
+  console.log(`Is rich? ${hulk.name}:`, hulk.rich);
 
   Avenger.cantidadInstancias();
 
