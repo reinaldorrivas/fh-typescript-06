@@ -2,8 +2,8 @@ export const basicTsClass = (): void => {
   class Avenger {
     static avgAge: number = 35;
 
-    private name: string;
-    private team: string;
+    protected name: string;
+    protected team: string;
     public realName?: string;
 
     constructor(name: string, team: string, realName?: string) {
