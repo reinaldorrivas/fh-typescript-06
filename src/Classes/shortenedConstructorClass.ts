@@ -18,6 +18,10 @@ export class Avenger {
     return this.rich;
   }
 
+  set isRichOrNot(rich) {
+    this.rich = rich;
+  }
+
   public avengerFullInfo() {
     return `Name: ${this.name} - Real Name: ${this.realName} - Power: ${this.power}`;
   }
