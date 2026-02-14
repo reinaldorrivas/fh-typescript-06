@@ -28,7 +28,7 @@ export class Avenger {
 }
 
 export const shortenedConstructorClass = () => {
-  const hulk = new Avenger("Hulk", 10000, "Bruce Banner");
+  const hulk: Avenger = new Avenger("Hulk", 10000, "Bruce Banner");
 
   console.log(hulk.avengerFullInfo());
   console.log(`Is rich? ${hulk.name}:`, hulk.rich);

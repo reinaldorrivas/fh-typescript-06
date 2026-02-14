@@ -3,7 +3,12 @@ import { Avenger } from "./shortenedConstructorClass";
 class FlyingAvenger extends Avenger {
   private flying: boolean = true;
 
-  constructor(name: string, power: number, realName: string, private isNaturalFlying: boolean) {
+  constructor(
+    name: string,
+    power: number,
+    realName: string,
+    private isNaturalFlying: boolean,
+  ) {
     super(name, power, realName);
 
     this.isRich();
@@ -17,7 +22,12 @@ class FlyingAvenger extends Avenger {
 }
 
 export const extendsTs = (): void => {
-  const ironman = new FlyingAvenger("Ironman", 8000, "Tony Stark", false);
+  const ironman: FlyingAvenger = new FlyingAvenger(
+    "Ironman",
+    8000,
+    "Tony Stark",
+    false,
+  );
 
   console.log(ironman.avengerFullInfo());
   console.log(`Is rich? ${ironman.name}:`, ironman.rich);
