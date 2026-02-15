@@ -29,4 +29,6 @@ export const abstractClasses = (): void => {
   };
 
   printName(wolverine);
+
+    console.log("--- END ABSTRACT CLASSES FILE ---");
 };
